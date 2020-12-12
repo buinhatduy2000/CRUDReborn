@@ -61,11 +61,20 @@
                             </a>
 
                             <div class="card-body">
-                                <form action="/data/<%= data.id %>?_method=DELETE" method="POST">
-                                    <button type="submit" class="btn btn-warning">Delete</button>
-                                </form>
-                                
-                                <a href="data/edit/<%= data.id %>" class="card-link btn btn-success">Update</a>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <form action="/data/<%= data.id %>?_method=DELETE" method="POST">
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </td>
+
+                                        <td>
+                                            <a href="data/edit/<%= data.id %>"
+                                                class="card-link btn btn-success">Update</a>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
                         <% }) %>
