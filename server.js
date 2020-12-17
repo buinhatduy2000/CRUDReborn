@@ -33,4 +33,6 @@ app.get('/', async (request, response) => {
 app.use(express.static("public"));
 app.use('/data', dataRouter);
 
-app.listen(5000);
+
+
+app.listen(process.env.PORT || 5000);
