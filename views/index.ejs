@@ -28,6 +28,11 @@
                 <a class="nav-link" href="#">#Some feature</a>
             </div>
         </div>
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </nav>
 </header>
 
@@ -35,6 +40,7 @@
 
     <div class="container mt-4">
         <div class="row">
+            <!--If haven't item, it will display-->
             <% if(data.length<1){ %>
                 <h1 class="text-white">No items yet, create a new item</h1>
                 <% } %>
@@ -55,8 +61,6 @@
                                     <li class="list-group-item">
                                         Price: <%= data.price %> $$$
                                     </li>
-                                    <li class="list-group-item">#002</li>
-                                    <li class="list-group-item">#003</li>
                                 </ul>
                             </a>
 
@@ -80,6 +84,8 @@
                         <% }) %>
         </div>
     </div>
+
+
 
 
 

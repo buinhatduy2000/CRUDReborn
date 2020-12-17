@@ -79,10 +79,10 @@ router.put('/:id', async (request, response)=>{
     }
 });
 
-
 router.delete('/:id', async(request, response)=>{
     await Data.findByIdAndDelete(request.params.id);
     response.redirect('/');
 });
+
 
 module.exports = router;

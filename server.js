@@ -29,6 +29,7 @@ app.get('/', async (request, response) => {
     response.render('index', { data: data });
 });
 
+
 app.use(express.static("public"));
 app.use('/data', dataRouter);
 
